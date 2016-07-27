@@ -40,7 +40,9 @@
 				$("#image").attr("src", "Black_Belt_Ninja.png");
 			});
 
-
+			$("#btn_html").click(function(){
+				$("#html").html("<p id='p_styling'>This html content was dynamically generated.<br>Because we used .htm() we were able to style this paragraph also (using an id) and not just change its text.</p>");
+			});
 
 
 
@@ -92,7 +94,7 @@
 		</div>
 		<div>
 			<h3>Using .html()</h3>
-			<p id="attibute">Click the button to add html to this div.</p>
+			<p id="html">Click the button to add/chage the html in this div.</p>
 			<h4 id="btn_html">Click here!</h4>
 		</div>
 
