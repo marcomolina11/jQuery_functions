@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Functions</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#tbx_focus").val("");
+
+			//using .focus() to change color of paragraph
+			$("#tbx_focus").focus(function(){
+				$("#pa").css("color","green");
+			});
+
+			//using .clic()k to change the font size of paragraph
+			$("#btn_click").click(function(){
+				$("#click").css("font-size","23px");
+			});
+
+			//using .addClass() to add a class (which makes text italic) to elemtents
+			$("#btn_class").click(function(){
+				$("#class").addClass("italic");
+				$("#btn_class").addClass("italic");
+			});
+
+			//using .val() to change the value of a textbox
+			$("#btn_value").click(function(){
+				$("#tbx_focus").val("This is the new 'Value'");
+			});
+
+			//using .tex() to change the text of a paragraph
+			$("#btn_text").click(function(){
+				$("#text").text("You changed the text!");
+			});
+
+			$("#btn_attr").click(function(){
+				$("#image").attr("src", "Black_Belt_Ninja.png");
+			});
+
+
+
+
+
+
+		});
+
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+	<h1>jQuery Functions!</h1>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Nothing To See Here</li>
+	</ul>
+	<div id="leftpanel">
+		
+		<div>
+			<h3>Using .focus()</h3>
+			<p id="pa">Click in the textbox to focus on it and thus changing the color of this paragraph.</p>
+			<input type="text" id="tbx_focus">
+		</div>
+		<div>
+			<h3>Using .click()</h3>
+			<p id="click">Click the button to make the font of this paragraph bigger!</p>
+			<h4 id="btn_click">Click here!</h4>
+		</div>
+		<div>
+			<h3>Using .addClass()</h3>
+			<p id="class">Click the button to add the class "italic" to this paragraph and the button text.</p>
+			<h4 id="btn_class">Click here!</h4>
+		</div>
+		<div>
+			<h3>Using .val()</h3>
+			<p id="value">Click the button to change the value (what it says) of the textbox at the top.</p>
+			<h4 id="btn_value">Click here!</h4>
+		</div>
+		<div>
+			<h3>Using .text()</h3>
+			<p id="text">Click the button to change the text of this praragraph.</p>
+			<h4 id="btn_text">Click here!</h4>
+		</div>
+		<div>
+			<h3>Using .attr()</h3>
+			<p id="attibute">Click the button to change the "source" attibute of this image thus getting a new image.</p>
+			<img id="image" src="Yellow_Belt_Ninja.png" alt="Yellow Belt Ninja">
+			<h4 id="btn_attr">Click here!</h4>
+		</div>
+		<div>
+			<h3>Using .html()</h3>
+			<p id="attibute">Click the button to add html to this div.</p>
+			<h4 id="btn_html">Click here!</h4>
+		</div>
+
+
+	</div>
+
+	</div>
+</body>
+</html>
